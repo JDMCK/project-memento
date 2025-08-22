@@ -1,0 +1,29 @@
+#home-content {
+  max-width: var(--content-width);
+  margin-inline: 1rem;
+  margin-top: 13rem;
+  background-color: var(--bg-grey);
+  color: white;
+  flex: 1;
+}
+
+#hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 10rem;
+  gap: 1rem;
+  padding-inline: 2rem;
+}
+
+#hero-img {
+  width: 60%;
+  rotate: -5deg;
+  border: 10px solid white;
+}
+
+#hero-text {
+  font-size: 38pt;
+  text-align: center;
+}

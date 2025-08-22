@@ -1,0 +1,11 @@
+{{ define "search-bar" }}
+<input
+  class="search-bar-input"
+  type="text"
+  hx-post="/api/search"
+  name="search"
+  hx-trigger="keyup delay:500ms changed"
+  hx-target="#search-results"
+  placeholder="Search..."
+/>
+{{ end }}

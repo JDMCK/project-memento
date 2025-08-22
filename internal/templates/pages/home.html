@@ -1,3 +1,10 @@
-{{ template "base" .}}
-
-<h1>Welcome to J-Blog</h1>
+{{ template "base" . }} {{ template "navbar" . }}
+<link rel="stylesheet" href="/static/css/home.css" />
+<div class="parent-container">
+  <div id="home-content">
+    <div id="hero-container">
+      <img id="hero-img" src="/static/img/profile.jpg" />
+      <h2 id="hero-text">Hi, I'm Jesse. I like writing code. Now I will write about writing code.</h2>
+    </div>
+  </div>
+</div>

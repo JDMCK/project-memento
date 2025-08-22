@@ -1,0 +1,11 @@
+{{ template "base" . }} {{ template "navbar" . }}
+<link rel="stylesheet" href="/static/css/search.css" />
+
+<div class="parent-container">
+  <div id="search-content">
+    <div class="search-container">{{ template "search-bar" }}</div>
+    <div id="results-container">
+      <div id="search-results"></div>
+    </div>
+  </div>
+</div>
