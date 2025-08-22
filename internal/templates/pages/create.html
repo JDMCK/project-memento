@@ -1,0 +1,24 @@
+{{ template "base" . }} {{ template "navbar" . }}
+
+<link rel="stylesheet" href="/static/css/create.css" />
+<div class="parent-container">
+  <div id="create-content">
+    <div id="create-form">
+      <label for="post-title-input">Title</label>
+      <input type="text" name="post-title" id="post-title-input" class="post-data" value="TEST TITLE" />
+      <label for="post-body-input">Body</label>
+      <textarea name="post-body" id="post-body-input" class="post-data">This is a test body</textarea>
+      <button
+        hx-post="/api/preview"
+        hx-trigger="click"
+        hx-target="#preview"
+        hx-swap="innerHTML"
+        hx-include=".post-data"
+      >
+        Preview
+      </button>
+      <button>Post</button>
+    </div>
+    <div id="preview"></div>
+  </div>
+</div>
